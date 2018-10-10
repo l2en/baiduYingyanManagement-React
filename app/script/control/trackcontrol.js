@@ -1,11 +1,21 @@
+
+/**
+ * ak/service_id先写死，仅做测试，上线后需要后台传入
+ *  ak：  RK99nKWU9pLqeoQPE9yv5fjKFyXT4yCt       
+    service_id： 203819 
+ * 
+ */
 $(function () {
   var bt = baidu.template,                // baidu.template
-    service_id = getQueryString('service_id'),   // service_id
-    ak = getQueryString('ak'),                   // ak
+    // service_id = getQueryString('service_id'),
+    // ak = getQueryString('ak'),
+    ak = 'RK99nKWU9pLqeoQPE9yv5fjKFyXT4yCt',
+    service_id = '203819',
     sign = 0;     //判断是否访问过
-  url = 'http://yingyan.baidu.com/api/v3',     // 请求地址
-    url2 = 'http://api.map.baidu.com/geocoder/v2',
-    url3 = 'http://yingyan.baidu.com/api/v2',
+    url = 'http://yingyan.baidu.com/api/v3',     // 百度鹰眼V3请求地址
+    url2 = 'http://api.map.baidu.com/geocoder/v2',  // 正地理编码服务，讲具体地址转换成经纬度
+    url3 = 'http://yingyan.baidu.com/api/v2',    // 百度鹰眼V2请求地址
+
     $datetimepicker = $('#datetimepicker'),      // datetimepicker控件
     $datetimeInput = $('#datetimeInput'),        // 时间选择的input
     $searchInputMonitor = $('#searchInputMonitor'),           // 搜索的关键字
@@ -131,9 +141,10 @@ $(function () {
 	/**
 	 * tab
 	 */
-  $('.trackTab').on('click', function () {
-    init();
-  });
+  // $('.trackTab').on('click', function () {
+  //   init();
+  // });
+  init();
 
 	/**
 	 * 初始化

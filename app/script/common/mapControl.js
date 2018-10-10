@@ -8,7 +8,6 @@
  * @file 初始化地图样式和组件
  * @author 崔健 cuijian03@baidu.com 2016.08.22
  */
-
 // // import ZoomControl from 'zoomControl'
 // import TrackAction from '../modules/trackcontrol/actions/trackAction';
 

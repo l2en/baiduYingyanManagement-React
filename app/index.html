@@ -31,6 +31,7 @@
 							<!--  内容  -->
 							<div class="collapse in">
 								<div class="manageBottom">
+
 									<!--  切换的tab  -->
 									<div class="manageTab visible">
 										<div class="monitorTab">实时监控
@@ -39,10 +40,11 @@
 										<div class="trackTab">轨迹查询
 											<div class="trackTabIcon"></div>
 										</div>
-										<div class="pointerTabLeft" id="pointerTab"></div>
+										<div class="pointerTabRight" id="pointerTab"></div>
 									</div>
+
 									<!--实时监控-->
-									<div class="monitor visible">
+									<div class="monitor hidden ">
 										<div class="monitorSearch">
 											<input class="searchInputMonitor" placeholder="请输入关键字" id="searchInputMonitor2">
 											<img src="static/images/searchicon.png" class="searchBtnMonitor" id="searchBtnMonitor2">
@@ -70,8 +72,9 @@
 											</div>
 										</div>
 									</div>
+
 									<!--  轨迹查询  -->
-									<div class="track hidden">
+									<div class="track visible">
 										<!--  时间选择  -->
 										<div class="trackDatetime">
 											<div class="input-append date" id="datetimepicker">
@@ -102,6 +105,7 @@
 											</div>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>

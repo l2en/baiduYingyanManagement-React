@@ -548,6 +548,7 @@ $(function () {
 								dataType: 'jsonp',
 								data: paramsGeo,
 								success: function (dataGeo) {
+									console.log('=======>>>获取entity信息', dataGeo)
 									var temp = [];
 									monitor.column_key.map(function (keyitem, index) {
 										if (keyitem === '_provider') {
