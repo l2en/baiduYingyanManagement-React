@@ -8,5 +8,4 @@ gulp.task('server', function () {
             baseDir: "app"
         }
     });
-
 });

@@ -35,6 +35,7 @@ $(function () {
 });
 
 $(function () {
+	console.log('======baidu', baidu);
 	var bt = baidu.template,                // baidu.template
 		service_id = getQueryString('service_id'),   // service_id
 		ak = getQueryString('ak'),                   // ak

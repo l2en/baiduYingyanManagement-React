@@ -561,7 +561,6 @@ $(function () {
         map.removeOverlay(CanvasLayerPointer);
         map.removeOverlay(canvasLayer);
         map.removeOverlay(canvasLayerBack);
-
       }
       window.canvasLayerBack = new CanvasLayer({
         map: map,
@@ -575,7 +574,6 @@ $(function () {
         map: map,
         update: updatePointer
       });
-
     }
 
     mapControl.removeBehaviorOverlay();

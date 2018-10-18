@@ -76,6 +76,7 @@ CanvasLayer.prototype.draw = function () {
 }
 
 CanvasLayer.prototype._draw = function () {
+    console.log('=======>>>>>>>>_draw', this.options.update)
     var map = this._map;
     var size = map.getSize();
     var center = map.getCenter();
